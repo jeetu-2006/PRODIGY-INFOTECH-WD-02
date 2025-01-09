@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #262e41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+  
+  .stopwatch-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .time-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .controls button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .lap-times {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    height: 320px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lap-times h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .lap-times ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lap-times li {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lap-times li:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+  
+  .lap-times li:nth-child(odd) {
+    background-color: #d0d0d0;
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .stopwatch-container {
+      width: 55%;
+      margin-right: 20px;
+    }
+  
+    .lap-times {
+      width: 55%;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .stopwatch-container {
+      width: 55%;
+    }
+  
+    .lap-times {
+      width: 55%;
+    }
+  }
